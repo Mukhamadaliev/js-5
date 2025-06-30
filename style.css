@@ -1,0 +1,387 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #2563eb;
+    --black: #000;
+    --white: white;
+    --minus-whihe: rgba(255, 255, 255, 0.7);
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-30 {
+    font-size: 30px;
+}
+
+.font-size-35 {
+    font-size: 35px;
+}
+
+.font-size-40 {
+    font-size: 40px;
+}
+
+.font-size-50 {
+    font-size: 50px;
+}
+
+.max-width {
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+
+button,
+input,
+i,
+li {
+    cursor: pointer;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    padding: 10px 0px;
+}
+
+header ul {
+    list-style: none;
+    gap: 50px;
+}
+
+.modal-1 input {
+    display: none;
+    padding: 10px 20px;
+    border: 1px solid black;
+
+}
+
+.modal-1 input:focus {
+    border: 1px solid blue;
+    outline: 1px solid blue;
+}
+
+.div-max {
+    margin-top: 100px;
+}
+
+.div-2>p {
+    max-width: 350px;
+    margin: 15px 0px;
+}
+
+.div-2-2>img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn-1 {
+    /* background-color: lightblue; */
+    text-align: center;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn-2 {
+    /* background-color: lightcoral; */
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+
+
+.ol {
+    /* display: flex;
+    align-items: center; */
+    gap: 20px;
+    list-style: none;
+    padding-left: 50px;
+    text-align: left;
+    margin-left: -150px;
+}
+
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.modal {
+    background-color: #ffffff;
+    color: #333;
+    width: 300px;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    right: 100%;
+    /* Changed from left to right */
+    top: 0;
+    margin-right: 10px;
+    /* Changed from margin-left */
+}
+
+.border {
+    border: none;
+}
+
+
+input {
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #2e92d5;
+    outline: none;
+}
+
+/* img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+} */
+
+
+.div-3-1>img,
+.div-3-2>img,
+.div-3-3>img,
+.div-3-4>img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+.div-h1{
+    text-align: center;
+    margin: 30px 0;
+}
+.div-max-4 ul,.div-max-4-1 ul {
+    list-style: none;
+    gap: 25px;
+}
+
+
+
+
+/* === ENHANCED RESPONSIVE DESIGN === */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .display {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header {
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .div-max {
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+
+    .div-2 {
+        text-align: center;
+    }
+
+    .div-2 > p {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .ol {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .btn-1, .btn-2 {
+        width: 100%;
+    }
+
+    .div-2-2 img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .background-2 {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .div-3-1, .div-3-2, .div-3-3, .div-3-4 {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .div-3-1>img, .div-3-2>img, .div-3-3>img, .div-3-4>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .div-max-4, .div-max-4-1 {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .div-4-1, .div-4-2, .div-4-3, .div-4-4, 
+    .div-4-5, .div-4-6, .div-4-7, .div-4-8 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .modal {
+        position: static;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .display {
+        flex-wrap: wrap;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header ul {
+        gap: 20px;
+    }
+
+    .div-max {
+        margin-top: 70px;
+        padding: 0 20px;
+    }
+
+    .div-2-2 img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .background-2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div-3-1, .div-3-2, .div-3-3, .div-3-4 {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .div-max-4, .div-max-4-1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div-4-1, .div-4-2, .div-4-3, .div-4-4, 
+    .div-4-5, .div-4-6, .div-4-7, .div-4-8 {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .max-width {
+        padding: 0 20px;
+    }
+
+    header ul {
+        gap: 30px;
+    }
+
+    .div-2-2 img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .background-2 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .div-3-1, .div-3-2, .div-3-3, .div-3-4 {
+        width: 48%;
+    }
+
+    .div-max-4, .div-max-4-1 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .div-4-1, .div-4-2, .div-4-3, .div-4-4, 
+    .div-4-5, .div-4-6, .div-4-7, .div-4-8 {
+        width: 48%;
+    }
+}
+
+/* Large devices (laptops/desktops, 1025px to 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .max-width {
+        padding: 0 30px;
+    }
+
+    header ul {
+        gap: 40px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1201px and up) */
+@media (min-width: 1201px) {
+    /* Default styles already cover this */
+}
